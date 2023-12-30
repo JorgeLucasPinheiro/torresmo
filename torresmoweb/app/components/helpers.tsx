@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export function Nav () {
     return (
-        <div className="block p-3 bg-slate-700">
+        <div className="flex items-center justify-center bg-slate-700 mx-auto" >
             <a href="/" className="p-3 hover:bg-slate-600">Inicio</a>
             <a href="/" className="p-3 hover:bg-slate-600">Produtos</a>
             <a href="/" className="p-3 hover:bg-slate-600">Sobre</a>
@@ -14,26 +14,33 @@ export function Nav () {
 
 export function Products () {
     return (
-        <div className="bg-slate-900 md:flex justify-center" id="Produtos">
-            <div className="justify-center bg-slate-800 m-2 rounded-sm">
-                <Image className="m-5 p-1 rounded-lg"
-                    src='/torresmo.jpg'
-                    width={400}
+        <div className=" md:flex justify-center" id="Produtos">
+            <div className="flex flex-col items-center bg-slate-800 m-1 md:my-2 rounded-md">
+                <Image className="rounded-lg mx-1"
+                    src='/banha.jpg'
+                    width={300}
                     height={200}
                     alt="Foto do torresmo"
                 />
-                <p className="text-center m-5">Torresmo</p>
+                <p className="text-center m-5">Mandioca</p>
             </div>
-            
-            <div className="justify-center bg-slate-800 m-2 rounded-sm">
-                <Image className="m-5 rounded-lg"
+            <div className="flex flex-col items-center bg-slate-800 m-1 md:my-2 rounded-md">
+                <Image className="rounded-lg mx-1"
                     src='/banha.jpg'
-                    width={400}
-                    height={300}
+                    width={300}
+                    height={200}
                     alt="Foto do torresmo"
-                    
                 />
-                <p className="text-center">Banha de Porco</p>
+                <p className="text-center m-5">Mandioca</p>
+            </div>
+            <div className="flex flex-col items-center bg-slate-800 m-1 md:my-2 rounded-md">
+                <Image className="rounded-lg mx-1"
+                    src='/banha.jpg'
+                    width={300}
+                    height={200}
+                    alt="Foto do torresmo"
+                />
+                <p className="text-center m-5">Mandioca</p>
             </div>
         </div>
     )
