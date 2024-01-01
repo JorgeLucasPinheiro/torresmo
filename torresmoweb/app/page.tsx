@@ -2,7 +2,8 @@ import {
   Nav , 
   Products ,
   Banner ,
-  About
+  About ,
+  Contacts
  } from "./components/components"
 
 export default function Home() {
@@ -12,5 +13,6 @@ export default function Home() {
       <Banner/>
       <Products/>
       <About/>
+      <Contacts/>
     </div>
   )}

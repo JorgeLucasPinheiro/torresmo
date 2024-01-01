@@ -37,11 +37,16 @@ function SingleProduts({ name, price }: SingleProductProps) {
 
 export function Products() {
     return (
-        <div className=" md:flex justify-center" id="Produtos">
-            <SingleProduts name="Banha suina" price="R$ 29,99"/>
-            <SingleProduts name="Torresmo" price="R$ 39,99"/>
-            <SingleProduts name="Mandioca" price="R$ 5,99"/>
-        </div>
+        <>
+            <div className="w-full bg-orange-700 text-center text-4xl">
+                    <p>Nossos Produtos</p>
+                </div>
+            <div className=" md:flex justify-center" id="Produtos">
+                <SingleProduts name="Banha suina" price="R$ 29,99"/>
+                <SingleProduts name="Torresmo" price="R$ 39,99"/>
+                <SingleProduts name="Mandioca" price="R$ 5,99"/>
+            </div>
+        </>
     )
 }
 
@@ -50,7 +55,7 @@ export function Banner() {
         <>
             <div className=" md:flex justify-center" id="Banner">
                 <div className="w-full flex flex-col items-center ">
-                    <div className=" bg-orange-800 w-full h-svh mb-2 text-center text-5xl">
+                    <div className=" bg-orange-800 w-full h-svh text-center text-5xl">
                         <div className="flex flex-col items-center">
                             <h1 className="py-10 mx-10 my-5 text-center">Escolha o melhor para você e para sua familia.</h1>
                             <p className="md:m-32 py-10 mx-5 mt-5 text-center"> <span className="text-orange-500"> Torresmo Pinheiro</span> Sabor e Qualidade</p>
@@ -61,7 +66,7 @@ export function Banner() {
             <div className="w-full items-center bg-orange-900">
                 <div className="flex flex-col items-center bg-orange-700 my-3 md:my-2">
                     <p className="m-2 sm:text-justify text-center md:text-3xl text-2xl">
-                    Bem-vindo à Sabor Suíno, sua porta de entrada para a autenticidade e tradição culinária! Somos uma empresa dedicada à produção artesanal de torresmo e banha de porco, proporcionando aos nossos clientes uma experiência gastronômica única.
+                    Bem-vindo à Torresmo Pinheiro, sua porta de entrada para a autenticidade e tradição culinária! Somos uma empresa dedicada à produção artesanal de torresmo e banha de porco, proporcionando aos nossos clientes uma experiência gastronômica única.
                     </p>
                 </div>
             </div>
@@ -85,8 +90,13 @@ export function About() {
 
 export function Contacts() {
     return (
-        <div className="">
-            
+        <div className="flex flex-col bg-orange-800">
+            <Image className="rounded-full m-1 mt-3 md:mt-1"
+                    src='/banha.jpg'
+                    width={50}
+                    height={50}
+                    alt="Foto do torresmo"
+                />
         </div>
     )
 }
