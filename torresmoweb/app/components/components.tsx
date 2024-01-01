@@ -90,13 +90,33 @@ export function About() {
 
 export function Contacts() {
     return (
-        <div className="flex flex-col bg-orange-800">
-            <Image className="rounded-full m-1 mt-3 md:mt-1"
-                    src='/banha.jpg'
-                    width={50}
-                    height={50}
-                    alt="Foto do torresmo"
-                />
+        <div className="">
+            <div className="flex flex-row items-center justify-center bg-orange-700 m-2 rounded-lg">
+                <div className="bg-orange-800">
+                    <Image className="rounded-full mx-1"
+                            src='/whatsapp.png'
+                            width={100}
+                            height={100}
+                            alt="Foto do torresmo"
+                        />
+                </div>
+                <div>
+                    <Image className="rounded-full m-1 mt-3 md:mt-1"
+                            src='/facebook.png'
+                            width={120}
+                            height={100}
+                            alt="Foto do torresmo"
+                        />
+                </div>
+                <div>
+                    <Image className="rounded-full m-1 mt-3 md:mt-1"
+                            src='/instagram.png'
+                            width={100}
+                            height={100}
+                            alt="Foto do torresmo"
+                        />
+                </div>
+            </div>
         </div>
     )
 }
