@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export function Nav () {
     return (
-        <div className="flex sticky top-0 sm:text-lg items-center justify-center bg-orange-800 mx-auto opacity-95"  >
+        <div className="flex sticky top-0 sm:text-lg items-center justify-center bg-orange-800 mx-auto opacity-90 border-solid border-2 border-orange-900"  >
             <a href="/" className="sm:p-3 p-1.5 hover:bg-orange-600">Inicio</a>
             <a href="/" className="sm:p-3 p-1.5 hover:bg-orange-600">Produtos</a>
             <a href="/" className="sm:p-3 p-1.5 hover:bg-orange-600">Sobre</a>
@@ -47,21 +47,45 @@ export function Products() {
 
 export function Banner() {
     return (
-        <div className=" md:flex justify-center" id="Banner">
-            <div className="w-full flex flex-col items-center ">
-                <Image className="md:w-4/5 w-screen h-screen"
-                    src='/torresmo.jpg'
-                    width={300}
-                    height={200}
-                    alt="Foto do torresmo"
-                    sizes=""
-                />
-                <div className="bg-orange-800 w-full my-2 p-2 text-center text-5xl">
-                    <p>O melhor para sua familia é 
-                        <span className="text-orange-500"> Torresmo Pinheiro</span>
+        <>
+            <div className=" md:flex justify-center" id="Banner">
+                <div className="w-full flex flex-col items-center ">
+                    <div className=" bg-orange-800 w-full h-svh mb-2 text-center text-5xl">
+                        <div className="flex flex-col items-center">
+                            <h1 className="py-10 mx-10 my-5 text-center">Escolha o melhor para você e para sua familia.</h1>
+                            <p className="md:m-32 py-10 mx-5 mt-5 text-center"> <span className="text-orange-500"> Torresmo Pinheiro</span> Sabor e Qualidade</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="w-full items-center bg-orange-900">
+                <div className="flex flex-col items-center bg-orange-700 my-3 md:my-2">
+                    <p className="m-2 sm:text-justify text-center md:text-3xl text-2xl">
+                    Bem-vindo à Sabor Suíno, sua porta de entrada para a autenticidade e tradição culinária! Somos uma empresa dedicada à produção artesanal de torresmo e banha de porco, proporcionando aos nossos clientes uma experiência gastronômica única.
                     </p>
                 </div>
             </div>
+        </>
+    )
+}
+
+export function About() {
+    return (
+        <div className="w-full items-center bg-orange-900">
+            <div className="flex flex-col items-center bg-orange-700 m-3 md:my-2 rounded-lg">
+                <p className="m-2 sm:text-justify text-center md:text-4xl text-3xl">Compromisso com a Qualidade:</p>
+
+                <p className="m-2 sm:text-justify text-center md:text-3xl text-2xl">
+                  A qualidade é a nossa prioridade. Trabalhamos em parceria com produtores locais que compartilham nosso compromisso com a criação responsável e sustentável de suínos. Cada pedaço de torresmo é cuidadosamente preparado para oferecer uma textura crocante e um sabor inigualável, enquanto nossa banha é extraída e refinada para garantir pureza e frescor.
+                </p>
+            </div>
+        </div>
+    )
+}
+
+export function Contacts() {
+    return (
+        <div className="">
             
         </div>
     )

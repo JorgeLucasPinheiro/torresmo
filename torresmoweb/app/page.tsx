@@ -1,7 +1,8 @@
 import { 
   Nav , 
   Products ,
-  Banner
+  Banner ,
+  About
  } from "./components/components"
 
 export default function Home() {
@@ -10,5 +11,6 @@ export default function Home() {
       <Nav/>
       <Banner/>
       <Products/>
+      <About/>
     </div>
   )}
