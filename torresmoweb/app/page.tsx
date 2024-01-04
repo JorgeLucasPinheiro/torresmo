@@ -3,7 +3,8 @@ import {
   Products ,
   Banner ,
   About ,
-  Contacts
+  Contacts ,
+  Location
  } from "./components/components"
 
 export default function Home() {
@@ -14,5 +15,6 @@ export default function Home() {
       <Products/>
       <About/>
       <Contacts/>
+      <Location/>
     </div>
   )}
